@@ -5,8 +5,8 @@ const GRID_SIZE = 20;
 const CELL_SIZE = 18;
 const INITIAL_SPEED = 200; // ms per tick
 const MIN_SPEED = 60;
-const SPEED_DECREASE = 8; // ms faster per food eaten
-const POINTS_PER_FOOD = 10;
+const SPEED_DECREASE = 4; // ms faster per food eaten
+const POINTS_PER_FOOD = 1000;
 
 type Direction = "UP" | "DOWN" | "LEFT" | "RIGHT";
 type Cell = { x: number; y: number };
