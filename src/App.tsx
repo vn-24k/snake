@@ -308,13 +308,13 @@ export default function App() {
     let className = "absolute transition-all duration-75 rounded-sm";
 
     if (isHead) {
-      className += " bg-emerald-300 shadow-inner shadow-emerald-200 scale-[0.85] rounded-full";
+      className += " bg-pink-300 shadow-inner shadow-emerald-200 scale-[0.85] rounded-full";
     } else if (isSnake) {
       const idx = snake.findIndex((c) => c.x === x && c.y === y);
       if (idx === snake.length - 1) {
-        className += " bg-emerald-600 scale-[0.80] rounded-full";
+        className += " bg-pink-600 scale-[0.80] rounded-full";
       } else {
-        className += " bg-emerald-500 scale-[0.85] rounded-sm";
+        className += " bg-pink-500 scale-[0.85] rounded-sm";
       }
     } else if (isFood) {
       className += " bg-red-400 scale-[0.75] rounded-full animate-pulse shadow-lg shadow-red-300/50";
